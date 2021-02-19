@@ -23,7 +23,7 @@ static bool isAtEnd() {
 }
 static Token makeToken(TokenType type) {
   Token token;
-  token.type = type;
+  token.type = type; 
   token.start = scanner.start;
   token.length = (int)(scanner.current - scanner.start);
   token.line = scanner.line;
