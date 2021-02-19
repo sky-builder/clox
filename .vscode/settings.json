@@ -3,6 +3,7 @@
     "stdio.h": "c",
     "debug.h": "c",
     "scanner.h": "c",
-    "compiler.h": "c"
+    "compiler.h": "c",
+    "object.h": "c"
   }
 }
