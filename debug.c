@@ -54,6 +54,8 @@ if (offset > 0 &&
       return simpleInstruction("OP_POP", offset);
     case OP_EQUAL:
       return simpleInstruction("OP_EQUAL", offset);
+    case OP_SET_GLOBAL:
+      return constantInstruction("OP_SET_GLOBAL", chunk, offset);
     case OP_GREATER:
       return simpleInstruction("OP_GREATER", offset);
     case OP_LESS:
