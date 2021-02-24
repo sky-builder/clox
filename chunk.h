@@ -20,11 +20,12 @@ typedef enum {
   OP_GREATER,
   OP_LESS,
   OP_PRINT,
+  OP_GET_LOCAL,
   OP_POP,
-    OP_GET_GLOBAL,
+  OP_GET_GLOBAL,
   OP_DEFINE_GLOBAL,
-    OP_SET_GLOBAL,
-
+  OP_SET_GLOBAL,
+  OP_SET_LOCAL,
 } OpCode;
 
 typedef struct {
