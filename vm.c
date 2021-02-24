@@ -112,6 +112,11 @@ static InterpretResult run() {
         push(constant);
         break;
       }
+      case OP_LOOP: {
+        uint16_t offset = READ_SHORT();
+        vm.ip -= offset;
+        break;
+      }
       case OP_GET_LOCAL: {
         uint8_t slot = READ_BYTE();
         push(vm.stack[slot]); 

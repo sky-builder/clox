@@ -28,6 +28,7 @@ typedef enum {
   OP_DEFINE_GLOBAL,
   OP_SET_GLOBAL,
   OP_SET_LOCAL,
+  OP_LOOP
 } OpCode;
 
 typedef struct {
