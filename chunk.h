@@ -5,6 +5,10 @@
 #include "common.h"
 
 typedef enum {
+  OP_CLOSE_UPVALUE,
+  OP_GET_UPVALUE,
+  OP_SET_UPVALUE,
+  OP_CLOSURE,
   OP_CONSTANT,
   OP_ADD,
   OP_SUBTRACT,
