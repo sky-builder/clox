@@ -1,0 +1,140 @@
+-- gc begin
+-- gc end
+   collected 0 bytes (from 6 to 6) next at 12
+-- gc begin
+-- gc end
+   collected 0 bytes (from 46 to 46) next at 92
+0x80003a060 allocate 40 for 1
+-- gc begin
+-- gc end
+   collected 0 bytes (from 238 to 238) next at 476
+-- gc begin
+0x80003a060 mark clock
+0x80003a060 blacken clock
+-- gc end
+   collected 0 bytes (from 262 to 262) next at 524
+0x80003a090 allocate 24 for 3
+-- gc begin
+0x80003a060 mark clock
+0x80003a060 blacken clock
+-- gc end
+   collected 0 bytes (from 454 to 454) next at 908
+-- gc begin
+0x80003a060 mark clock
+0x80003a090 mark <native fn>
+0x80003a090 blacken <native fn>
+0x80003a060 blacken clock
+-- gc end
+   collected 0 bytes (from 534 to 534) next at 1068
+0x8000626b0 allocate 80 for 2
+-- gc begin
+0x80003a060 mark clock
+0x80003a090 mark <native fn>
+0x80003a090 blacken <native fn>
+0x80003a060 blacken clock
+-- gc end
+   collected 0 bytes (from 536 to 536) next at 1072
+-- gc begin
+0x80003a060 mark clock
+0x80003a090 mark <native fn>
+0x8000626b0 mark <script>
+0x8000626b0 blacken <script>
+0x80003a090 blacken <native fn>
+0x80003a060 blacken clock
+-- gc end
+   collected 0 bytes (from 576 to 576) next at 1152
+0x800062730 allocate 40 for 1
+-- gc begin
+0x800062730 mark a
+0x80003a060 mark clock
+0x80003a090 mark <native fn>
+0x8000626b0 mark <script>
+0x8000626b0 blacken <script>
+0x80003a090 blacken <native fn>
+0x80003a060 blacken clock
+0x800062730 blacken a
+-- gc end
+   collected 0 bytes (from 704 to 704) next at 1408
+-- gc begin
+0x80003a060 mark clock
+0x80003a090 mark <native fn>
+0x8000626b0 mark <script>
+0x8000626b0 blacken <script>
+0x800062730 mark a
+0x800062730 blacken a
+0x80003a090 blacken <native fn>
+0x80003a060 blacken clock
+-- gc end
+   collected 0 bytes (from 712 to 712) next at 1424
+-- gc begin
+0x80003a060 mark clock
+0x80003a090 mark <native fn>
+0x8000626b0 mark <script>
+0x8000626b0 blacken <script>
+0x800062730 mark a
+0x800062730 blacken a
+0x80003a090 blacken <native fn>
+0x80003a060 blacken clock
+-- gc end
+   collected 0 bytes (from 744 to 744) next at 1488
+-- gc begin
+0x80003a060 mark clock
+0x80003a090 mark <native fn>
+0x8000626b0 mark <script>
+0x8000626b0 blacken <script>
+0x800062730 mark a
+0x800062730 blacken a
+0x80003a090 blacken <native fn>
+0x80003a060 blacken clock
+-- gc end
+   collected 0 bytes (from 752 to 752) next at 1504
+-- gc begin
+0x80003a060 mark clock
+0x80003a090 mark <native fn>
+0x8000626b0 mark <script>
+0x8000626b0 blacken <script>
+0x800062730 mark a
+0x800062730 blacken a
+0x80003a090 blacken <native fn>
+0x80003a060 blacken clock
+-- gc end
+   collected 0 bytes (from 784 to 784) next at 1568
+== <script> ==
+0000    1 OP_CONSTANT         1 '1'
+0002    | OP_DEFINE_GLOBAL    0 'a'
+0004    2 OP_CONSTANT         3 '2'
+0006    | OP_SET_GLOBAL       2 'a'
+0008    | OP_POP
+0009    | OP_NIL
+0010    | OP_RETURN
+-- gc begin
+0x8000626b0 mark <script>
+0x80003a060 mark clock
+0x80003a090 mark <native fn>
+0x80003a090 blacken <native fn>
+0x80003a060 blacken clock
+0x8000626b0 blacken <script>
+0x800062730 mark a
+0x800062730 blacken a
+-- gc end
+   collected 0 bytes (from 824 to 824) next at 1648
+0x800062aa0 allocate 40 for 0
+          [ <script> ]
+0000    1 OP_CONSTANT         1 '1'
+          [ <script> ][ 1 ]
+0002    | OP_DEFINE_GLOBAL    0 'a'
+          [ <script> ]
+0004    2 OP_CONSTANT         3 '2'
+          [ <script> ][ 2 ]
+0006    | OP_SET_GLOBAL       2 'a'
+          [ <script> ][ 2 ]
+0008    | OP_POP
+          [ <script> ]
+0009    | OP_NIL
+          [ <script> ][ nil ]
+0010    | OP_RETURN
+0x800062aa0 free type 0
+0x800062730 free type 1
+0x8000626b0 free type 2
+0x80003a090 free type 3
+0x80003a060 free type 1

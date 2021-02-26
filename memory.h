@@ -17,6 +17,9 @@
         sizeof(type) * (newCount))
 
 void* reallocate(void* pointer, size_t oldSize, size_t newSize);
+void markObject(Obj* object);
+void markValue(Value value);
+void collectGarbage();
 void freeObjects();
 
 #define FREE_ARRAY(type, pointer, oldCount) \
